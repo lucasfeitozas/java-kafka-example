@@ -35,7 +35,7 @@ public class KafkaConfiguration {
 
     @Bean
     public KafkaAdmin kafkaAdmin() {
-        KafkaAdmin kafkaAdmin = new KafkaAdmin(kafkaProperties.buildAdminProperties(null));
+        KafkaAdmin kafkaAdmin = new KafkaAdmin(kafkaProperties.buildAdminProperties());
         kafkaAdmin.setFatalIfBrokerNotAvailable(kafkaProperties.getAdmin().isFailFast());
         return kafkaAdmin;
     }

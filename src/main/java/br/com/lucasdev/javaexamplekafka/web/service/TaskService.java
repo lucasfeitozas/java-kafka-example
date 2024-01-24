@@ -8,7 +8,7 @@ import java.util.concurrent.ExecutionException;
 import br.com.lucasdev.javaexamplekafka.jms.service.KafkaProducerService;
 import br.com.lucasdev.javaexamplekafka.web.model.TaskRequest;
 import br.com.lucasdev.javaexamplekafka.web.model.TaskStatus;
-import lombok.extern.java.Log;
+
 import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -22,7 +22,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
-@Log
 @Service
 public class TaskService {
 

@@ -1,7 +1,6 @@
 package br.com.lucasdev.javaexamplekafka.jms.service;
 
 import br.com.lucasdev.javaexamplekafka.web.model.TaskStatus;
-import lombok.extern.java.Log;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaHandler;
@@ -10,7 +9,6 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
 @Component
-@Log
 @KafkaListener(topics = "general-task-topic", groupId = "task-group")
 public class KafKaTopicListeners {
 

@@ -4,7 +4,6 @@ import java.time.Duration;
 import java.util.Iterator;
 
 import br.com.lucasdev.javaexamplekafka.web.model.TaskStatus;
-import lombok.extern.java.Log;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -14,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-@Log
 public class KafkaConsumerService {
 
     private final Logger LOGGER = LoggerFactory.getLogger(KafkaConsumerService.class);
